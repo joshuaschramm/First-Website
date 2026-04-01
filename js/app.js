@@ -132,10 +132,20 @@ function displayWeather(data, locationData) {
     document.getElementById('weatherWidget').innerHTML = weatherHTML;
 }
 
-// Load weather when DOM is ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', getWeather);
-} else {
-    // DOM is already loaded
-    getWeather();
+// Initialize weather widget
+function initWeather() {
+    const weatherWidget = document.getElementById('weatherWidget');
+    if (weatherWidget) {
+        getWeather();
+    }
 }
+
+// Load weather when page is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initWeather);
+} else {
+    initWeather();
+}
+
+// Also handle load event as backup
+window.addEventListener('load', initWeather);

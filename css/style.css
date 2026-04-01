@@ -91,13 +91,6 @@ body {
     width: 100%;
 }
 
-/* Weather Widget Section */
-.weather-widget-section {
-    padding: 2rem 0;
-    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
-    border-bottom: 1px solid #e0e0e0;
-}
-
 .weather-widget {
     background: white;
     border-radius: 12px;
@@ -346,8 +339,39 @@ body {
 footer {
     background: var(--primary);
     color: var(--secondary);
-    padding: 2rem 0;
+    padding: 3rem 0;
     text-align: center;
+}
+
+footer .weather-widget {
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer .weather-location {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer .weather-temp {
+    color: var(--secondary);
+}
+
+footer .weather-description {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer .detail-label {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer .detail-value {
+    color: var(--accent);
+}
+
+footer .weather-details {
+    border-top-color: rgba(255, 255, 255, 0.1);
 }
 
 footer p {
