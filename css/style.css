@@ -54,6 +54,12 @@ body {
     font-weight: 700;
     color: var(--accent);
     letter-spacing: -1px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #764ba2;
 }
 
 .nav-menu {
