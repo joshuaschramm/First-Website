@@ -91,6 +91,123 @@ body {
     width: 100%;
 }
 
+/* Weather Widget Section */
+.weather-widget-section {
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.weather-widget {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
+    max-width: 600px;
+}
+
+.weather-loading,
+.weather-error {
+    text-align: center;
+    color: #666;
+    padding: 1rem;
+}
+
+.weather-location-denied {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #666;
+}
+
+.weather-location-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.weather-location-denied h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.weather-location-denied p {
+    font-size: 0.95rem;
+    color: #999;
+}
+
+.weather-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.weather-location {
+    font-size: 0.95rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.weather-emoji {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.weather-info {
+    flex: 1;
+}
+
+.weather-temp {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+}
+
+.weather-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.weather-details {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.weather-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.detail-label {
+    font-size: 0.85rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.detail-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-top: 0.25rem;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -439,5 +556,17 @@ textarea {
 
     .skills {
         grid-template-columns: 1fr;
+    }
+
+    .weather-emoji {
+        font-size: 3rem;
+    }
+
+    .weather-temp {
+        font-size: 2rem;
+    }
+
+    .weather-details {
+        gap: 1rem;
     }
 }
